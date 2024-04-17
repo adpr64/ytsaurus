@@ -34,7 +34,7 @@ jobs:
         add-apt-repository ppa:oibaf/graphics-drivers
         wget -qO- https://apt.llvm.org/llvm-snapshot.gpg.key | sudo tee /etc/apt/trusted.gpg.d/apt.llvm.org.asc
         apt update && apt upgrade -y
-        apt-get install clang-17 lldb-17 lld-17 -y
+        apt install clang-17 lldb-17 lld-17 -y
         apt install -y libvulkan1 mesa-vulkan-drivers vulkan-tools" > init_script.sh
 
     - name: Run static analysis
