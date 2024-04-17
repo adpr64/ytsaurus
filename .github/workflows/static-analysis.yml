@@ -12,7 +12,7 @@ on:
   # The output will be shown in PR comments (unless the 'force_console_print' flag is used)
   pull_request_target:
     branches:
-      - "*"
+      - "main"
 
 jobs:
   static_analysis:
